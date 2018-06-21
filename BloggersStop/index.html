@@ -1,0 +1,123 @@
+<html>
+<head>
+	<title>Blogging Website</title>
+	<meta name='description' content='Blog content'>
+	<meta name='viewport' content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+	<!-- adding  external css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+	<script type="text/javascript" src='js/jquery.min.js'></script>	
+
+	<script>
+function myFunction() {
+    var x;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("search_text").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (x=='home') {
+        window.location="http://www.tutorialspoint.com";
+    } else {
+        alert("Invalid Input");
+    }
+    
+}
+</script>
+
+
+</head>
+<body>
+		<!-- general container of the template  -->
+<div class="container">
+		<!--  header begins here -->
+	<header>
+		<div id='logo-menu'>Blog Template</div>
+		<input type="checkbox" id='btn-menu'>
+		<label for="btn-menu"><h1>=</h1>
+		</label>
+		<div id="banner">
+			<div id="banner-left">Bloggers' Stop</div>
+			<div id="banner-right-social">
+			<ul>
+				<li><a href='#'><img src="images/social/facebook.png" height="40px" width="40px"></a></li>
+				<li><a href='#'><img src="images/social/twitter.png" height="40px" width="40px"></a></li>
+				<li><a href='#'><img src="images/social/instagram.png" height="40px" width="40px"></a></li>
+			</ul>				
+			</div>
+		</div>
+		<nav class="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Entertainment</a></li>
+				<li><a href="#">Local News</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+
+		<!-- mobile search view -->
+		<form action="" id="search_bar" method="post">
+			<input type="text" name="" id="search_text" placeholder="Search">
+			<button id="search_button"><img src="images/search.png" height="20px" width="30px"></button onclick="myFunction()">
+			
+		</form>
+		<!-- end of mobile search view -->
+
+	</header>
+		<!--  header ends here -->
+		<!-- main content begins here   -->
+
+	<div id="main">
+		<div class="content">
+			<article>
+				<h1>OUR SWEET SANTA!!!</h1>
+			<div id="slider">
+				<img src="images/slide3.jpg" width='100%' height="45%">
+			</div>	
+			<p>
+				December brings the holiday season upon us. Christmas means Santa Claus and Santa means gifts. December 4 is Santa’s List Day — the list that decides if you’ve been good, naughty or nice. Santa knows. Before he set up shop in the North Pole, Santa worked out of Spain. According to the legends of Belgium and the Netherlands, St. Nicholas — generally referred to as Sinterklaas — comes from Spain by a steam boat to give gifts to children. This is the version according to which Santa keeps a list of children who’ve been naughty or nice.
+				We have Coca-Cola to thank for making Santa’s red costume famous. The company first introduced Santa wearing the red suit in 1931 in one of their ad campaigns. Prior to 1931, Santa dressed in blue, green, brown and mauve. Coca-Cola’s massive ad campaign featured Santa in Coke’s red and white colours, and it was so famous that it effectively locked Santa’s dress code.
+				<br>
+				<a href="#"><img src="images/readmore.png" height="60px" width="100px"></a>
+			</p>
+			</article>
+
+			<article>
+				<h1>OUR SWEET SANTA!!!</h1>
+			<div id="slider">
+				<img src="images/slide3.jpg" width='100%' height="45%">
+			</div>	
+			<p>
+				December brings the holiday season upon us. Christmas means Santa Claus and Santa means gifts. December 4 is Santa’s List Day — the list that decides if you’ve been good, naughty or nice. Santa knows. Before he set up shop in the North Pole, Santa worked out of Spain. According to the legends of Belgium and the Netherlands, St. Nicholas — generally referred to as Sinterklaas — comes from Spain by a steam boat to give gifts to children. This is the version according to which Santa keeps a list of children who’ve been naughty or nice.
+				We have Coca-Cola to thank for making Santa’s red costume famous. The company first introduced Santa wearing the red suit in 1931 in one of their ad campaigns. Prior to 1931, Santa dressed in blue, green, brown and mauve. Coca-Cola’s massive ad campaign featured Santa in Coke’s red and white colours, and it was so famous that it effectively locked Santa’s dress code.
+				<br>
+				<a href="#"><img src="images/readmore.png" height="60px" width="100px"></a>
+			</p>
+			</article>
+		</div>
+		<!-- sidebar widget area goes here -->
+		<div class="side">
+			<form action="" method="">
+				<input type="text" name="" id="search_text" placeholder="Search">
+				<!--<input type="button" name="" id="search_button">-->
+				<button id="search_button"><img src="images/search.png" height="20px" width="30px"></button>
+			</form>
+
+
+		</div>
+		<div class="side">
+			<div id="head_tab"></div>
+			Copyright@OurBloggingSite
+		</div>
+			<!-- end of the last sidebar widget -->
+	</div>
+
+</div>
+<script type="text/javascript">
+	$('#btn-menu').on('click',function(){
+		$('.menu').toggleClass('show');
+	});
+</script>
+
+</body>	
+</html>
